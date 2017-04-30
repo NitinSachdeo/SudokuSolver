@@ -1,0 +1,203 @@
+﻿<Window x:Name="Interface" x:Class="Sudoku_Solver.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sudoku_Solver"
+        mc:Ignorable="d"
+        Title="Sudoku Solver" Height="775" Width="600" KeyDown="KeyPress">
+    <Window.Background>
+        <ImageBrush ImageSource="Images/Background.png" Stretch="UniformToFill"/>
+    </Window.Background>
+    <Grid x:Name="Main">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="22*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="25*"/>
+            <ColumnDefinition Width="550*"/>
+            <ColumnDefinition Width="25*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid x:Name="Sudoku" Grid.Column="1" Grid.Row="1" Panel.ZIndex="1" IsEnabled="False">
+            <Grid.Background>
+                <ImageBrush ImageSource="Images/Sudoku Background.png" Stretch="UniformToFill">
+                    <ImageBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform Angle="90" CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </ImageBrush.RelativeTransform>
+                </ImageBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name = "Cell0_0" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "1" Grid.Column = "1" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="00" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell0_1" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "1" Grid.Column = "2" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="01" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell0_2" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "1" Grid.Column = "3" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="02" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell0_3" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "1" Grid.Column = "5" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="03" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell0_4" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "1" Grid.Column = "6" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="04" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell0_5" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "1" Grid.Column = "7" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="05" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell0_6" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "1" Grid.Column = "9" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="06" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell0_7" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "1" Grid.Column = "10" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="07" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell0_8" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "1" Grid.Column = "11" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="08" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell1_0" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "2" Grid.Column = "1" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="10" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell1_1" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "2" Grid.Column = "2" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="11" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell1_2" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "2" Grid.Column = "3" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="12" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell1_3" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "2" Grid.Column = "5" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="13" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell1_4" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "2" Grid.Column = "6" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="14" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell1_5" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "2" Grid.Column = "7" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="15" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell1_6" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "2" Grid.Column = "9" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="16" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell1_7" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "2" Grid.Column = "10" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="17" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell1_8" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "2" Grid.Column = "11" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="18" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell2_0" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "3" Grid.Column = "1" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="20" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell2_1" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "3" Grid.Column = "2" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="21" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell2_2" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "3" Grid.Column = "3" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="22" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell2_3" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "3" Grid.Column = "5" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="23" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell2_4" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "3" Grid.Column = "6" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="24" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell2_5" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "3" Grid.Column = "7" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="25" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell2_6" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "3" Grid.Column = "9" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="26" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell2_7" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "3" Grid.Column = "10" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="27" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell2_8" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "3" Grid.Column = "11" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="28" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell3_0" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "5" Grid.Column = "1" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="30" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell3_1" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "5" Grid.Column = "2" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="31" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell3_2" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "5" Grid.Column = "3" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="32" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell3_3" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "5" Grid.Column = "5" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="33" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell3_4" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "5" Grid.Column = "6" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="34" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell3_5" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "5" Grid.Column = "7" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="35" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell3_6" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "5" Grid.Column = "9" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="36" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell3_7" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "5" Grid.Column = "10" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="37" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell3_8" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "5" Grid.Column = "11" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="38" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell4_0" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "6" Grid.Column = "1" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="40" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell4_1" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "6" Grid.Column = "2" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="41" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell4_2" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "6" Grid.Column = "3" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="42" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell4_3" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "6" Grid.Column = "5" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="43" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell4_4" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "6" Grid.Column = "6" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="44" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell4_5" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "6" Grid.Column = "7" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="45" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell4_6" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "6" Grid.Column = "9" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="46" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell4_7" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "6" Grid.Column = "10" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="47" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell4_8" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "6" Grid.Column = "11" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="48" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell5_0" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "7" Grid.Column = "1" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="50" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell5_1" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "7" Grid.Column = "2" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="51" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell5_2" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "7" Grid.Column = "3" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="52" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell5_3" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "7" Grid.Column = "5" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="53" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell5_4" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "7" Grid.Column = "6" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="54" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell5_5" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "7" Grid.Column = "7" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="55" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell5_6" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "7" Grid.Column = "9" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="56" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell5_7" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "7" Grid.Column = "10" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="57" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell5_8" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "7" Grid.Column = "11" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="58" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell6_0" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "9" Grid.Column = "1" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="60" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell6_1" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "9" Grid.Column = "2" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="61" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell6_2" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "9" Grid.Column = "3" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="62" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell6_3" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "9" Grid.Column = "5" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="63" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell6_4" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "9" Grid.Column = "6" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="64" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell6_5" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "9" Grid.Column = "7" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="65" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell6_6" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "9" Grid.Column = "9" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="66" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell6_7" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "9" Grid.Column = "10" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="67" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell6_8" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "9" Grid.Column = "11" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="68" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell7_0" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "10" Grid.Column = "1" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="70" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell7_1" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "10" Grid.Column = "2" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="71" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell7_2" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "10" Grid.Column = "3" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="72" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell7_3" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "10" Grid.Column = "5" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="73" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell7_4" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "10" Grid.Column = "6" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="74" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell7_5" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "10" Grid.Column = "7" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="75" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell7_6" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "10" Grid.Column = "9" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="76" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell7_7" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "10" Grid.Column = "10" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="77" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell7_8" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "10" Grid.Column = "11" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="78" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell8_0" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "11" Grid.Column = "1" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="80" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell8_1" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "11" Grid.Column = "2" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="81" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell8_2" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "11" Grid.Column = "3" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="82" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell8_3" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "11" Grid.Column = "5" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="83" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell8_4" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "11" Grid.Column = "6" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="84" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell8_5" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "11" Grid.Column = "7" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="85" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell8_6" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "11" Grid.Column = "9" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="86" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell8_7" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "11" Grid.Column = "10" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="87" VerticalContentAlignment="Center" Content=" "/>
+            <Button x:Name = "Cell8_8" FontFamily = "Segoe Script" FontSize = "30" HorizontalContentAlignment = "Center" Padding = "0" Background = "PapayaWhip" BorderBrush = "#FF4F0909" BorderThickness = "3" Grid.Row = "11" Grid.Column = "11" PreviewMouseLeftButtonDown="SetValue" Panel.ZIndex="2" Tag="88" VerticalContentAlignment="Center" Content=" "/>
+
+        </Grid>
+
+        <Grid x:Name="Choices" Grid.Column="1" Grid.Row="3" Panel.ZIndex="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="5*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="Add1" Content="1" Grid.Column="1" FontFamily="Segoe Script" FontSize="30" HorizontalContentAlignment="Center" Padding="0" Background="PapayaWhip" BorderBrush="#FF4F0909" BorderThickness="3" PreviewMouseLeftButtonDown ="SelectCell" Panel.ZIndex="2"/>
+            <Button x:Name="Add2" Content="2" Grid.Column="3" FontFamily="Segoe Script" FontSize="30" HorizontalContentAlignment="Center" Padding="0" Background="PapayaWhip" BorderBrush="#FF4F0909" BorderThickness="3" PreviewMouseLeftButtonDown ="SelectCell" Panel.ZIndex="2"/>
+            <Button x:Name="Add3" Content="3" Grid.Column="5" FontFamily="Segoe Script" FontSize="30" HorizontalContentAlignment="Center" Padding="0" Background="PapayaWhip" BorderBrush="#FF4F0909" BorderThickness="3" PreviewMouseLeftButtonDown ="SelectCell" Panel.ZIndex="2"/>
+            <Button x:Name="Add4" Content="4" Grid.Column="7" FontFamily="Segoe Script" FontSize="30" HorizontalContentAlignment="Center" Padding="0" Background="PapayaWhip" BorderBrush="#FF4F0909" BorderThickness="3" PreviewMouseLeftButtonDown ="SelectCell" Panel.ZIndex="2"/>
+            <Button x:Name="Add5" Content="5" Grid.Column="9" FontFamily="Segoe Script" FontSize="30" HorizontalContentAlignment="Center" Padding="0" Background="PapayaWhip" BorderBrush="#FF4F0909" BorderThickness="3" PreviewMouseLeftButtonDown ="SelectCell" Panel.ZIndex="2"/>
+            <Button x:Name="Add6" Content="6" Grid.Column="11" FontFamily="Segoe Script" FontSize="30" HorizontalContentAlignment="Center" Padding="0" Background="PapayaWhip" BorderBrush="#FF4F0909" BorderThickness="3" PreviewMouseLeftButtonDown ="SelectCell" Panel.ZIndex="2"/>
+            <Button x:Name="Add7" Content="7" Grid.Column="13" FontFamily="Segoe Script" FontSize="30" HorizontalContentAlignment="Center" Padding="0" Background="PapayaWhip" BorderBrush="#FF4F0909" BorderThickness="3" PreviewMouseLeftButtonDown ="SelectCell" Panel.ZIndex="2"/>
+            <Button x:Name="Add8" Content="8" Grid.Column="15" FontFamily="Segoe Script" FontSize="30" HorizontalContentAlignment="Center" Padding="0" Background="PapayaWhip" BorderBrush="#FF4F0909" BorderThickness="3" PreviewMouseLeftButtonDown ="SelectCell" Panel.ZIndex="2"/>
+            <Button x:Name="Add9" Content="9" Grid.Column="17" FontFamily="Segoe Script" FontSize="30" HorizontalContentAlignment="Center" Padding="0" Background="PapayaWhip" BorderBrush="#FF4F0909" BorderThickness="3" PreviewMouseLeftButtonDown ="SelectCell" Panel.ZIndex="2"/>
+
+        </Grid>
+        <Grid x:Name="Functions" Grid.Column="1" Grid.Row="5" Panel.ZIndex="1" IsEnabled="False">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="10*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="Solve" Content="Solve" FontFamily="Segoe Script" FontSize="30" HorizontalContentAlignment="Center" Padding="0" Background="PapayaWhip" BorderBrush="#FF4F0909" BorderThickness="3" Panel.ZIndex="2" Click="SolveClick"/>
+            <Button x:Name="Clear" Content="Clear" FontFamily="Segoe Script" FontSize="30" HorizontalContentAlignment="Center" Padding="0" Background="PapayaWhip" BorderBrush="#FF4F0909" BorderThickness="3" Panel.ZIndex="2" Grid.Column="2" Click="ClearClick"/>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,90 @@
+c:\users\nitin\documents\visual studio 2015\Projects\Sudoku Solver\Sudoku Solver\bin\Debug\Sudoku Solver.exe.config
+c:\users\nitin\documents\visual studio 2015\Projects\Sudoku Solver\Sudoku Solver\bin\Debug\Sudoku Solver.exe
+c:\users\nitin\documents\visual studio 2015\Projects\Sudoku Solver\Sudoku Solver\bin\Debug\Sudoku Solver.pdb
+c:\users\nitin\documents\visual studio 2015\Projects\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.csprojResolveAssemblyReference.cache
+c:\users\nitin\documents\visual studio 2015\Projects\Sudoku Solver\Sudoku Solver\obj\Debug\MainWindow.g.cs
+c:\users\nitin\documents\visual studio 2015\Projects\Sudoku Solver\Sudoku Solver\obj\Debug\App.g.cs
+c:\users\nitin\documents\visual studio 2015\Projects\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver_MarkupCompile.cache
+c:\users\nitin\documents\visual studio 2015\Projects\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver_MarkupCompile.lref
+c:\users\nitin\documents\visual studio 2015\Projects\Sudoku Solver\Sudoku Solver\obj\Debug\MainWindow.baml
+c:\users\nitin\documents\visual studio 2015\Projects\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.g.resources
+c:\users\nitin\documents\visual studio 2015\Projects\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku_Solver.Properties.Resources.resources
+c:\users\nitin\documents\visual studio 2015\Projects\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.csproj.GenerateResource.Cache
+c:\users\nitin\documents\visual studio 2015\Projects\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.exe
+c:\users\nitin\documents\visual studio 2015\Projects\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.pdb
+C:\Users\Nitin\Documents\Visual Studio 2015\Projects\Sudoku Solver\Sudoku Solver\bin\Debug\Sudoku Solver.exe.manifest
+C:\Users\Nitin\Documents\Visual Studio 2015\Projects\Sudoku Solver\Sudoku Solver\bin\Debug\Sudoku Solver.application
+C:\Users\Nitin\Documents\Visual Studio 2015\Projects\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.exe.manifest
+C:\Users\Nitin\Documents\Visual Studio 2015\Projects\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.application
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver\Sudoku Solver\bin\Debug\Sudoku Solver.exe.config
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.exe
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.pdb
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver\Sudoku Solver\bin\Debug\Sudoku Solver.exe.manifest
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver\Sudoku Solver\bin\Debug\Sudoku Solver.application
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver\Sudoku Solver\bin\Debug\Sudoku Solver.exe
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver\Sudoku Solver\bin\Debug\Sudoku Solver.pdb
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.csprojResolveAssemblyReference.cache
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver\Sudoku Solver\obj\Debug\MainWindow.g.cs
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver\Sudoku Solver\obj\Debug\App.g.cs
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver_MarkupCompile.cache
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver_MarkupCompile.lref
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver\Sudoku Solver\obj\Debug\MainWindow.baml
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.g.resources
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku_Solver.Properties.Resources.resources
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.csproj.GenerateResource.Cache
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.exe.manifest
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.application
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver Proper\Sudoku Solver\bin\Debug\Sudoku Solver.exe.config
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver Proper\Sudoku Solver\obj\Debug\Sudoku Solver.exe
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver Proper\Sudoku Solver\obj\Debug\Sudoku Solver.pdb
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver Proper\Sudoku Solver\bin\Debug\Sudoku Solver.exe.manifest
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver Proper\Sudoku Solver\bin\Debug\Sudoku Solver.application
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver Proper\Sudoku Solver\bin\Debug\Sudoku Solver.exe
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver Proper\Sudoku Solver\bin\Debug\Sudoku Solver.pdb
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver Proper\Sudoku Solver\obj\Debug\Sudoku Solver.csprojResolveAssemblyReference.cache
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver Proper\Sudoku Solver\obj\Debug\MainWindow.g.cs
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver Proper\Sudoku Solver\obj\Debug\App.g.cs
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver Proper\Sudoku Solver\obj\Debug\Sudoku Solver_MarkupCompile.cache
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver Proper\Sudoku Solver\obj\Debug\Sudoku Solver_MarkupCompile.lref
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver Proper\Sudoku Solver\obj\Debug\MainWindow.baml
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver Proper\Sudoku Solver\obj\Debug\Sudoku Solver.g.resources
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver Proper\Sudoku Solver\obj\Debug\Sudoku_Solver.Properties.Resources.resources
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver Proper\Sudoku Solver\obj\Debug\Sudoku Solver.csproj.GenerateResource.Cache
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver Proper\Sudoku Solver\obj\Debug\Sudoku Solver.exe.manifest
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver Proper\Sudoku Solver\obj\Debug\Sudoku Solver.application
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver - UWPHacks\Sudoku Solver\bin\Debug\Sudoku Solver.exe.config
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver - UWPHacks\Sudoku Solver\obj\Debug\Sudoku Solver.exe
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver - UWPHacks\Sudoku Solver\obj\Debug\Sudoku Solver.pdb
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver - UWPHacks\Sudoku Solver\bin\Debug\Sudoku Solver.exe.manifest
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver - UWPHacks\Sudoku Solver\bin\Debug\Sudoku Solver.application
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver - UWPHacks\Sudoku Solver\bin\Debug\Sudoku Solver.exe
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver - UWPHacks\Sudoku Solver\bin\Debug\Sudoku Solver.pdb
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver - UWPHacks\Sudoku Solver\obj\Debug\Sudoku Solver.csprojResolveAssemblyReference.cache
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver - UWPHacks\Sudoku Solver\obj\Debug\MainWindow.g.cs
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver - UWPHacks\Sudoku Solver\obj\Debug\App.g.cs
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver - UWPHacks\Sudoku Solver\obj\Debug\Sudoku Solver_MarkupCompile.cache
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver - UWPHacks\Sudoku Solver\obj\Debug\Sudoku Solver_MarkupCompile.lref
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver - UWPHacks\Sudoku Solver\obj\Debug\MainWindow.baml
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver - UWPHacks\Sudoku Solver\obj\Debug\Sudoku Solver.g.resources
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver - UWPHacks\Sudoku Solver\obj\Debug\Sudoku_Solver.Properties.Resources.resources
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver - UWPHacks\Sudoku Solver\obj\Debug\Sudoku Solver.csproj.GenerateResource.Cache
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver - UWPHacks\Sudoku Solver\obj\Debug\Sudoku Solver.exe.manifest
+C:\Users\Nitin\Google Drive\Coding\Sudoku Solver - UWPHacks\Sudoku Solver\obj\Debug\Sudoku Solver.application
+C:\Users\Nitin\Google Drive\Coding\C#\Sudoku Solver\Sudoku Solver\bin\Debug\Sudoku Solver.exe.config
+C:\Users\Nitin\Google Drive\Coding\C#\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.exe
+C:\Users\Nitin\Google Drive\Coding\C#\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.pdb
+C:\Users\Nitin\Google Drive\Coding\C#\Sudoku Solver\Sudoku Solver\bin\Debug\Sudoku Solver.exe.manifest
+C:\Users\Nitin\Google Drive\Coding\C#\Sudoku Solver\Sudoku Solver\bin\Debug\Sudoku Solver.application
+C:\Users\Nitin\Google Drive\Coding\C#\Sudoku Solver\Sudoku Solver\bin\Debug\Sudoku Solver.exe
+C:\Users\Nitin\Google Drive\Coding\C#\Sudoku Solver\Sudoku Solver\bin\Debug\Sudoku Solver.pdb
+C:\Users\Nitin\Google Drive\Coding\C#\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.csprojResolveAssemblyReference.cache
+C:\Users\Nitin\Google Drive\Coding\C#\Sudoku Solver\Sudoku Solver\obj\Debug\MainWindow.g.cs
+C:\Users\Nitin\Google Drive\Coding\C#\Sudoku Solver\Sudoku Solver\obj\Debug\App.g.cs
+C:\Users\Nitin\Google Drive\Coding\C#\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver_MarkupCompile.cache
+C:\Users\Nitin\Google Drive\Coding\C#\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver_MarkupCompile.lref
+C:\Users\Nitin\Google Drive\Coding\C#\Sudoku Solver\Sudoku Solver\obj\Debug\MainWindow.baml
+C:\Users\Nitin\Google Drive\Coding\C#\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.g.resources
+C:\Users\Nitin\Google Drive\Coding\C#\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku_Solver.Properties.Resources.resources
+C:\Users\Nitin\Google Drive\Coding\C#\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.csproj.GenerateResource.Cache
+C:\Users\Nitin\Google Drive\Coding\C#\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.exe.manifest
+C:\Users\Nitin\Google Drive\Coding\C#\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.application
